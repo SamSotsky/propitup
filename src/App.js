@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Prop from './components/Prop';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Prop firstname="Jane" lastname="Doe" age="45" haircolor="Black"/>  
+      <Prop firstname="John" lastname="smith" age="88" haircolor="Black"/>  
+      <Prop firstname="Millard" lastname="Fillmore" age="467" haircolor="Pink"/>  
+      <Prop firstname="Maria" lastname="Smith" age="4" haircolor="Green"/>  
     </div>
   );
 }
 
 export default App;
+
+// Props: way to pass info from parent Ex.(App.js) to child Ex.(Prop)
